@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Numeros impares</title>
+        <link rel="stylesheet" type="text/css" href="../css/impar.css">
+        <script type="text/javascript">
+            var num = 100;
+            var res;
+            var sum = 0;
+
+            for(var i=1; i<=100; i++)
+            {
+                res=i%2;
+                if(res==1)
+                {
+                    sum=sum+i;
+
+                    document.write("<p>Numero "+i+" Suma de todos los impares: "+sum+"</p>");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="barras">
+        <nav>
+            <ul class="nav">
+                <li><a href="../html/indexori.html">Inicio</a></li>
+                <li><a href="../html/articlesxd.html">Articles</a></li>
+                <li><a href="../html/votaciones.html">Votaciones</a></li>
+                <li><a href="../html/sumanum.html">Sumas de numeros</a></li>
+
+                <li><a href="">If-Else y Case</a>
+                    <ul>
+                        <li><a href="../html/numeros_order.html">Mayor a menor</a></li>
+                        <li><a href="../html/importe_bruto.html">Importe bruto</a></li>
+                        <li><a href="../html/sueldo.html">Sueldo</a></li>
+                    </ul>   
+                </li>
+
+                <li><a href="">While y For</a>
+                    <ul>
+                        <li><a href="../html/asteriscos.html">Asteriscos</a></li>
+                        <li><a href="../html/tablas.html">Tablas de multiplicar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Numeros ordenados</title>
+        <link rel="stylesheet" type="text/css" href="../css/num_orde.css">
+        <script type="text/javascript">
+
+          num1=prompt("Ingresa primer numero: ");
+          num2=prompt("Ingresa segundo numero: ");
+          num3=prompt("Ingresa ultimo numero: ");
+        
+          if(num1>num2)
+            {
+              if(num1>num3)
+                {
+                  if(num2>num3)
+                  {
+                      alert("Numeros de mayor a menor: "+"\n"+num1+"\n"+num2+"\n"+num3);
+                  }
+                    else
+                    {
+                        alert("Numeros de mayor a menor: "+"\n"+num1+"\n"+num3+"\n"+num2);
+                    }
+                } 
+            }
+          else if(num2>num1)
+          {
+              if(num2>num3)
+              {
+                  if(num1>num3)
+                  {
+                    alert("Numeros de mayor a menor: "+"\n"+num2+"\n"+num1+"\n"+num3);
+                  }
+                  
+                  else
+                  {
+                    alert("Numeros de mayor a menor: "+"\n"+num2+"\n"+num3+"\n"+num1);
+                  }
+              }
+                else if(num3>num2)
+                  {
+                        if(num3>num1)
+                        {
+                            if(num2>num1)
+                            {
+                                alert("Numeros de mayor a menor: "+"\n"+num3+"\n"+num2+"\n"+num1);
+                            }
+                            else
+                            {
+                                alert("Numeros de mayor a menor: "+"\n"+num3+"\n"+num1+"\n"+num2);
+                            }
+                        }
+                    }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="barras">
+    <nav>
+      <ul class="nav">
+        <li><a href="../html/indexori.html">Inicio</a></li>
+        <li><a href="../html/articlesxd.html">Articles</a></li>
+        <li><a href="../html/votaciones.html">Votaciones</a></li>
+        <li><a href="../html/sumanum.html">Sumas de numeros</a></li>
+
+        <li><a href="">If-Else y Case</a>
+          <ul>
+            <li><a href="../html/importe_bruto.html">Importe bruto</a></li>
+            <li><a href="../html/sueldo.html">Sueldo</a></li>
+          </ul> 
+        </li>
+
+        <li><a href="">While y For</a>
+          <ul>
+            <li><a href="../html/impares.html">Numeros del 1 al 99</a></li>
+            <li><a href="../html/asteriscos.html">Asteriscos</a></li>
+            <li><a href="../html/tablas.html">Tablas de multiplicar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+    </body>
+</html>

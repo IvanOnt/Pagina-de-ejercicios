@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Votaciones</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilo_vota.css">
+        <script type="text/javascript">
+            function verificar()
+            {
+                var region=document.getElementsByName("region");
+                for(i=0;i<=region.length; i++){
+                    if(region[i].checked){
+                        
+                        regio=parseInt(region[i].value);
+                        switch(regio)
+                        {
+                            case 1:
+                                document.getElementById("negrita").innerHTML="Norte";
+                                break;
+                            case 2:
+                                document.getElementById("negrita").innerHTML="Centro";
+                                break;
+                            case 3:
+                                document.getElementById("negrita").innerHTML="Sur";
+                                break;
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <nav>
+            <ul class="nav">
+                 <li><a href="../html/indexori.html">Inicio</a></li>
+                <li><a href="../html/articlesxd.html">Articles</a></li>
+                <li><a href="../html/sumanum.html">Sumas de numeros</a></li>
+
+                <li><a href="">If-Else y Case</a>
+                    <ul>
+                        <li><a href="../html/numeros_order.html">Mayor a menor</a></li>
+                        <li><a href="../html/importe_bruto.html">Importe bruto</a></li>
+                        <li><a href="../html/sueldo.html">Sueldo</a></li>
+                    </ul>   
+                </li>
+
+                <li><a href="">While y For</a>
+                    <ul>
+                        <li><a href="../html/impares.html">Numeros del 1 al 99</a></li>
+                        <li><a href="../html/asteriscos.html">Asteriscos</a></li>
+                        <li><a href="../html/tablas.html">Tablas de multiplicar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <form action="">
+            <p>Selecciona la región donde vives: </p>
+            <input type="radio" value="1" name="region"> Norte<br>
+            <input type="radio" value="2" name="region"> Centro<br>
+            <input type="radio" value="3" name="region"> Sur<br>  
+
+            <input type="button" value="Enviar"onclick="verificar();">
+        </form>
+         <p>El voto es de la región: <bold id="negrita"></bold></p>
+    </footer>
+    </body>
+</html>
